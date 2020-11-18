@@ -7,7 +7,7 @@ import json
 
 def get_redis():
     if not hasattr(g, 'redis'):
-        g.redis = redis.StrictRedis(host='localhost', db=0, socket_timeout=6)
+        g.redis = redis.StrictRedis(host='redis', db=0, socket_timeout=6)
     return g.redis
 
 app = Flask(__name__)
