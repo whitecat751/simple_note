@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1 align="center"> Hisory</h1>
+        {% for msg in history_msgs %}
+                {{msg[0]}}:
+                <br> {{msg[1]}}</br>
+            </li>
+        {% else %}
+            <h2 align="center">History is empty so far. Pleass make a post</h2>
+        {% endfor %}
+        
+        <form action="/" method="POST">
+            <input type="submit" value="Return" name="Return" />    
+        </form>
+    </body>
+</html>
